@@ -223,6 +223,7 @@
         "script/vmware.sh",
         "script/virtualbox.sh",
         "script/parallels.sh",
+        "script/profile.sh",
         "script/motd.sh",
         "{{user `custom_script`}}",
         "script/minimize.sh",
