@@ -190,6 +190,17 @@
   ],
   "post-processors": [
 		{
+			"type": "vsphere",
+				"host": "{{ user `vsphere_host` }}",
+				"insecure": true,
+        "cluster": "{{ user `vsphere_cluster` }}",
+				"username": "{{ user `vsphere_user` }}",
+				"password": "{{ user `vsphere_password` }}",
+				"datacenter": "{{ user `vsphere_datacenter` }}",
+				"datastore": "{{ user `vsphere_datastore` }}",
+				"vm_name": "{{ user `vm_name` }}"
+		},
+		{
 			"type": "vsphere-template",
 				"host": "{{ user `vsphere_host` }}",
 				"insecure": true,
