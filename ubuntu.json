@@ -221,7 +221,6 @@
       "scripts": [
         "script/desktop.sh",
         "script/update.sh",
-        "script/vagrant.sh",
         "script/sshd.sh",
         "script/vmware.sh",
         "script/virtualbox.sh",
