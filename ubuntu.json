@@ -150,12 +150,15 @@
     }
   ],
   "post-processors": [
-    {
-      "keep_input_artifact": false,
-      "output": "box/{{.Provider}}/{{user `vm_name`}}-{{user `version`}}.box",
-      "type": "vagrant",
-      "vagrantfile_template": "{{ user `vagrantfile_template` }}"
-    }
+		{
+			"type": "vsphere-template",
+				"host": "{{ user `vsphere_host` }}",
+				"insecure": true,
+				"username": "{{ user `vsphere_user` }}",
+				"password": "{{ user `vsphere_password` }}",
+				"datacenter": "{{ user `vsphere_datacenter` }}",
+				"folder": "{{ user `vsphere_folder` }}"
+		}
   ],
   "provisioners": [
     {
