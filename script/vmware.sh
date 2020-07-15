@@ -67,3 +67,5 @@ if [[ $PACKER_BUILDER_TYPE =~ vmware ]]; then
       install_vmware_tools
     fi 
 fi
+
+install_open_vm_tools
