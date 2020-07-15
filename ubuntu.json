@@ -71,7 +71,6 @@
       ],
       "iso_checksum": "{{ user `iso_checksum` }}",
       "iso_checksum_type": "{{ user `iso_checksum_type` }}",
-      "iso_checksum_type": "{{user `iso_checksum_type`}}",
       "boot_wait": "15s",
       "boot_command": [
         "<tab><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
@@ -84,7 +83,6 @@
       "disk_discard": "unmap",
       "disk_compression": true,
       "headless": "{{user `headless`}}",
-      "http_directory": ".",
       "shutdown_command": "echo '{{user `ssh_password`}}' | sudo -S shutdown -P now",
       "output_directory": "artifacts/qemu/{{user `name`}}{{user `version`}}"
     },
